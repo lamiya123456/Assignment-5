@@ -1,0 +1,89 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles/style.css">
+            <!-- Tailwind Css Cdn Link -->
+            <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+            <!-- Daisy Cdn Link --> 
+            <script src="https://cdn.tailwindcss.com"></script>
+            <!-- Flowbite Cdn Link -->
+            <title>document</title>
+        </head>
+        <body class="bg-[#F4F7FF] max-w-6xl mx-auto">
+         <header>
+             <nav>
+               <div class="flex justify-between p-2  text-2xl bg-[#FFFFFF] mt-4 rounded-lg">  
+                   <div class="flex p-4 items-center space-x-5 text-center">
+                       <img src="./assets/logo.png" alt="logo">
+                       <h1>Dev<span class="font-extrabold">Board</span></h1>
+                   </div>
+                   <div class="mt-5">
+                    <button href="#"  class="text-white completed disabled:bg-blue-200 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Back to Desk
+                    </button>
+                </div>
+             </nav>
+             <div>
+                <h2 class="text-center font-extrabold text-3xl mt-4">Blogs</h2>
+             </div>
+             <br>
+            <div class="max-w-6xl mx-auto">
+            <div class="bg-[#FFFFFF] rounded-lg">
+                <div class="font-extrabold text-2xl border-b-2 border-dashed p-3">
+                    Question-1: What are the different ways to select an element in the DOM?
+                </div>
+                <div class="p-3">
+                    Answer:There are several ways to select an element in the DOM:
+                    select one element by its id.
+                    Select all elements with the same class.
+                    Select all elements with the same tag. 
+                </div>
+            </div>
+                <br>
+            <div class="bg-[#FFFFFF] rounded-lg">
+               <div class="font-extrabold text-2xl border-b-2 border-dashed p-3">
+                Question-2: What is the difference between innerHTML, innerText, and textContent ?
+               </div>
+   
+              <div class="p-3">
+                Answer: HTML content (including tags).
+                visible text (ignores hidden text).
+                all the text (even hidden text).
+              </div>
+            </div>
+                <br>
+            <div class="bg-[#FFFFFF] rounded-lg">
+               <div class="font-extrabold text-2xl border-b-2 border-dashed p-3">
+                Question-3: What is event delegation in the DOM?
+              </div>
+
+              <div class="p-3">
+                Answer:Event delegation is a technique where you add a single event listener to a parent element instead of adding individual listeners to each child element.
+              </div>
+            </div>
+                <br>
+            <div class="bg-[#FFFFFF] rounded-lg">    
+              <div class="font-extrabold text-2xl border-b-2 border-dashed p-3">
+                Question-4: What is event bubbling in the DOM?
+              </div>
+
+              <div class="p-3">
+                Answer:Event bubbling is when an event starts on a child element and then moves up to its parent elements one by one.
+              </div>
+            </div>
+                <br>
+            <div class="bg-[#FFFFFF] rounded-lg mb-10">
+              <div class="font-extrabold text-2xl border-b-2 border-dashed p-3">
+                Question-5: How do you create, add, and remove elements using JavaScript?
+              </div>
+
+              <div class="p-3">
+                Answer:To create, add, and remove elements using JavaScript, you use document.createElement() to create, appendChild() to add, and removeChild() to remove the element.
+              </div>
+            </div>
+          </div>
+       </header>
+        </body>
+        </html>

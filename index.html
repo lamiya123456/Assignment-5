@@ -1,12 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/style.css">
+   <!-- Tailwind Css Cdn Link -->
+   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+   <!-- Daisy Cdn Link --> 
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- Flowbite Cdn Link -->
+   <title>Dev-Board</title>
 </head>
-<body>
+<body class="bg-[#F4F7FF] max-w-7xl mx-auto">
+   <header>
+             <nav>
+               <div class="flex justify-between p-2  text-2xl bg-[#FFFFFF] mt-4 rounded-lg">  
+                   <div class="flex p-4 items-center space-x-5 text-center">
+                       <img src="./assets/logo.png" alt="logo">
+                       <h1>Dev<span class="font-extrabold">Board</span></h1>
+                   </div>
+                   <div class="flex items-center space-x-6">
+                       <div class="flex space-x-2 items-center justify-center w-32 h-16  bg-[#F4F7FF] rounded-full">
+                           <img class="h-6" src="./assets/checkbox.png" alt="">
+                           <h2 id="total-task" class="font-extrabold text-3xl">23</h2>
+                       </div>
+                       <div class="w-16 h-16 bg-[#F4F7FF] flex justify-center items-center rounded-full">
+                           <img id="theme" src="./assets/theme-btn.png" alt="">
+                       </div>
+                   </div>
+             </nav>
+   </header>
+   
+   <main class="grid grid-cols-4  mb-10">
+      <section class="col-span-3 bg-[#FFFFFF] mt-5 rounded-lg">
+        <div class="grid grid-cols-4 gap-4 min-h-32 my-5  border-b-2 border-dashed pb-10">
+
+             <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 ml-6 rounded-lg">
+               <div class=" w-16 h-16 rounded-full bg-[#FFFFFF] flex justify-center items-center"> 
+                   <img src="./assets/checkbox.png" alt="">
+               </div>
+                <div>
+                   <h2>Task Assigned</h2>
+                   <p id="task-rem" class="font-extrabold text-3xl">06</p>
+                </div>
+             </div>
+
+             <div  id="discover" class="change-color col-span-2 flex  items-center px-8 mt-6 space-x-2 rounded-lg">
+                 <div class="border-dashed border-black ">
+                   <img src="./assets/board.png" alt="">
+                 </div>
+                 <div>
+                   <h2 class="text-xl text-white">
+                       Discover Something<br>
+                       New Today!
+                   </h2>
+                 </div>
+             </div>
+
+             <div class="bg-[#F4F7FF] flex justify-center items-center space-x-2 mt-6 mr-6 rounded-lg">
+               <div class=" w-16 h-16 rounded-full bg-[#FFFFFF] flex justify-center items-center"> 
+                   <img src="./assets/calender.png" alt="">
+               </div>
+                <div id="date">
+                   <h2>Wed ,</h2>
+                   <p class="text-lg font-bold"></p>
+                </div>
+             </div>
+        </div>
+
+
+
+
+   <!-- Main Card Start Here -->
+   <div class="grid grid-cols-3 gap-5 pb-5 p-6">
+   <!-- Main Card One -->  
+     <div class="bg-[#F4F7FF] p-3 rounded-lg">
+           <div class="px-2 pb-5 space-y-4">
+                   <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">ShopEase</button>
+       
+                   <h5 class="text-xl font-semibold tracking-tight text-black">Fix Mobile Button Issue</h5>
+                   
+                   <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                         <p class="">Debug using Chrome DevTools,<br>
+                            check for overlapping...
+                         </p>
+                   </div>
+                   <div class=" border-b-2 border-dashed"></div>
+               <div class="flex items-center justify-between">
+                   <div>
+                       <h3>Deadline</h3>
+                       <h2 class="text-lg font-bold">21 March 2025</h2>
+                   </div>
+                   <div class="">
+                       <button href="#"  class="text-white completed disabled:bg-blue-200 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                           Completed
+                       </button>
+                   </div>
+               </div>
+           </div>
+     </div>
+  
+     
+
+   <!-- Main Card Two -->
+     <div class="bg-[#F4F7FF] p-3 rounded-lg">
+       <div class="px-2 pb-5 space-y-4">
+               <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">CloudSync</button>
+   
+               <h5 class="text-xl font-semibold tracking-tight text-black">Add Dark Mode</h5>
+               
+               <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                     <p class="">Store the user's preference in <br> localStorage, update CSS...
+                     </p>
+               </div>
+               <div class=" border-b-2 border-dashed"></div>
+           <div class="flex items-center justify-between">
+               <div>
+                   <h3>Deadline</h3>
+                   <h2 class="text-lg font-bold">21 March 2025</h2>
+               </div>
+               <div>
+                   <button href="#" class="text-white completed disabled:bg-blue-200 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                       Completed
+                   </button>
+               </div>
+           </div>
+       </div>
+     </div>
+      
+   
+
+   <!-- Main Card Three -->
+     <div class="bg-[#F4F7FF] p-3 rounded-lg">
+       <div class="px-2 pb-5 space-y-4">
+               <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">SwiftPay</button>
+   
+               <h5 class="text-xl font-semibold tracking-tight text-black">Optimize Home page</h5>
+               
+               <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                     <p class="">Debug using Chrome DevTools,<br>
+                         check for overlapping...
+                     </p>
+               </div>
+               <div class=" border-b-2 border-dashed"></div>
+           <div class="flex items-center justify-between">
+               <div>
+                   <h3>Deadline</h3>
+                   <h2 class="text-lg font-bold">21 March 2025</h2>
+               </div>
+               <div>
+                   <button href="#" class="text-white completed disabled:bg-blue-200 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                       Completed
+                   </button>
+               </div>
+           </div>
+       </div>
+     </div>  
+
+
+
+   <!-- Main Card Four -->
+     <div class="bg-[#F4F7FF] p-3 rounded-lg">
+       <div class="px-2 pb-5 space-y-4">
+               <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">Meta</button>
+   
+               <h5 class="text-xl font-semibold tracking-tight text-black">Add new emoji 🤲</h5>
+               
+               <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                     <p class="">Debug using Chrome DevTools,<br>
+                         check for overlapping...
+                     </p>
+               </div>
+               <div class=" border-b-2 border-dashed"></div>
+           <div class="flex items-center justify-between">
+               <div>
+                   <h3>Deadline</h3>
+                   <h2 class="text-lg font-bold">21 March 2025</h2>
+               </div>
+               <div>
+                   <button href="#" class="text-white completed disabled:bg-blue-200 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                       Completed
+                   </button>
+               </div>
+           </div>
+       </div>
+     </div>
     
+     
+
+   <!-- Main Card Five -->
+     <div class="bg-[#F4F7FF] p-3 rounded-lg">
+       <div class="px-2 pb-5 space-y-4">
+               <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">CloudSync</button>
+   
+               <h5 class="text-xl font-semibold tracking-tight text-black">Integrate OpenAI API </h5>
+               
+               <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                     <p class="">Debug using Chrome DevTools,<br>
+                         check for overlapping...
+                     </p>
+               </div>
+               <div class=" border-b-2 border-dashed"></div>
+           <div class="flex items-center justify-between">
+               <div>
+                   <h3>Deadline</h3>
+                   <h2 class="text-lg font-bold">21 March 2025</h2>
+               </div>
+               <div>
+                   <button href="#" class="text-white completed disabled:bg-blue-200 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                       Completed
+                   </button>
+               </div>
+           </div>
+       </div>
+     </div>
+
+
+
+   <!-- Main Card Six -->
+     <div class="bg-[#F4F7FF] p-3 rounded-lg">
+       <div class="px-2 pb-5 space-y-4">
+               <button class="px-4 p-2 bg-[#FFFFFF]  mt-5 rounded-lg">Glassdoar</button>
+   
+               <h5 class="text-xl font-semibold tracking-tight text-black">Improve Job searching </h5>
+               
+               <div class="bg-[#FFFFFF] p-2 rounded-lg"> 
+                     <p class="">Debug using Chrome DevTools,<br>
+                         check for overlapping...
+                     </p>
+               </div>
+               <div class=" border-b-2 border-dashed"></div>
+           <div class="flex items-center justify-between">
+               <div>
+                   <h3>Deadline</h3>
+                   <h2 class="text-lg font-bold">21 March 2025</h2>
+               </div>
+               <div>
+                   <button href="#" class="text-white completed disabled:bg-blue-200 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                       Completed
+                   </button>
+               </div>
+           </div>
+       </div>
+     </div>
+
+
+   </div>
+ </section>
+
+      <section class="col-span-1">
+           <div class="h-[98%] flex flex-col items-center space-y-2 text-xl bg-[#FFFFFF] mt-5 ml-5 rounded-lg py-8">  
+               <div class="flex  space-x-2">
+                   <img src="./assets/activity.png" alt="logo">
+                   <h2>Activity Log</h2>
+               </div>
+               <div class=" border-b-2 border-dashed pb-6 w-full">
+                   <button id="clear" href="#" class="text-white mx-auto block bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                       Clear History
+                   </button>
+               </div>
+               <div id="task-completed">
+
+               </div>
+           </div>
+           
+      </section>
+</main>
+
+<footer>
+
+</footer>
+
+<script src="java.js"></script>
 </body>
 </html>
